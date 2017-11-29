@@ -39,7 +39,7 @@ def type_of_update(mess_from_user, mess):               # Определяет �
     if mess_from_user[5] == 'entities' and mess['message']['chat']['id'] > 0 and mess['message']['from']['is_bot'] == False and mess['message']['text'] == "/start" :
         person_id = mess['message']['from']['id']
         send_mess_toperson(person_id)
-    elif mess_from_user[4] == 'text' and mess['message']['text'] == "/setbirthday"
+   # elif mess_from_user[4] == 'text' and mess['message']['text'] == "/setbirthday"
         #type_id = person_id
     elif mess_from_user[4] == 'new_chat_participant' and mess['message']['new_chat_participant']['id'] == 467092924:
         chat_id = mess['message']['chat']['id']
